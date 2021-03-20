@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-inverse fixed-top navbar-light"  style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#"></a> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+     <ul class="navbar-nav mr-auto">
+       <img src="https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" style="height: 20px; width:20px ;"/>
+     </ul>
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href={% url 'home' %}>Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href={% url 'screen_test' %}>Depression Test</a> <!-- f1 -->
+       </li>
+
+         <!-- {% if user.is_authenticated %}
+         <li class="nav-item">
+           <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="{% url 'logout' %}?next=/">Logout</a>
+         </li>
+         {% else %}
+         <li class="nav-item">
+           <a class="nav-link" href={% url 'register' %}>Register/Login</a>
+         </li>
+         {% endif %} -->
+         
+         <li class="nav-item">
+           <a class="nav-link" href={% url 'locate' %}>Nearest center</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/social/login/">Counsellor Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href={% url 'viewCBT' %}>Experience/Discussion</a>
+        </li>
+     </ul>
+   </div>
+</nav>
