@@ -1,0 +1,414 @@
+
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Cabin+Sketch|Dancing+Script|Parisienne|Special+Elite" rel="stylesheet">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+
+    <style>
+    .container{
+  margin-top:120px;
+}
+.screen-form {
+  margin-top: 20px;
+}
+.card1{
+  margin:20px 0 20px 0;
+  max-width: 375px;
+}
+</style>
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    
+<div class='container'>
+  <h2>Take a Depression Test</h2>
+  <h6><i>Note : These tests are not accurate. You can locate and consult a mental health expert for the accurate diagnosis.</i></h6>
+
+<div id="formfill">
+<form class="screen-form">
+<fieldset class="form-group">
+    <p><b>1. Little interest or pleasure in doing things</b></p>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios1" value="10" checked>
+        Rarely
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios2" value="20">
+        Sometimes
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios3" value="30">
+        Often
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios4" value="40">
+        Very Often
+      </label>
+    </div>
+  </fieldset>
+</form>
+  <form>
+  <fieldset class="form-group">
+      <p><b>2. Feeling down, depressed or hopeless</b></p>    
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios1" value="10" checked>
+          Rarely
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios2" value="20">
+          Sometimes
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios3" value="30">
+          Often
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios4" value="40">
+          Very Often
+        </label>
+      </div>
+    </fieldset>
+  </form>
+    <form>
+    <fieldset class="form-group">
+        <p><b>3. Trouble falling or staying asleep, or sleeping too much</b></p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios1" value="10" checked>
+            Rarely
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios2" value="20">
+            Sometimes
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios3" value="30">
+            Often
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios4" value="40">
+            Very Often
+          </label>
+        </div>
+      </fieldset>
+    </form>
+      <form>
+      <fieldset class="form-group">
+          <p><b>4. Feeling bad about yourself- or that you are a failure or have let yourself or your family down</b></p>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios1" value="10" checked>
+              Rarely
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios2" value="20">
+              Sometimes
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios3" value="30">
+              Often
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios4" value="40">
+              Very Often
+            </label>
+          </div>
+        </fieldset>
+      </form>
+        <form>
+        <fieldset class="form-group">
+            <p><b>5. Do you get irritable and/or easily annoyed when anxious?</b></p>          
+            <div class="form-check">              
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios1" value="10" checked>
+                Rarely
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios2" value="20">
+                Sometimes
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios3" value="30">
+                Often
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios4" value="40">
+                Very Often
+              </label>
+            </div>
+          </fieldset>
+        </form>
+          <form>
+          <fieldset class="form-group">
+              <p><b>6. Thoughts that you would be better off dead, or of hurting yourself</b></p>            
+              <div class="form-check">                
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios1" value="10" checked>
+                  Rarely
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios2" value="20">
+                  Sometimes
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios3" value="30">
+                  Often
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios4" value="40">
+                  Very Often
+                </label>
+              </div>
+            </fieldset>
+          </form>
+            <form>
+            <fieldset class="form-group">
+                <p><b>7. If you've had any days with issues above, how difficult have these problems made it for you at work, home, school, or with other people?</b></p>              
+                <div class="form-check">                  
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios1" value="10" checked>
+                    Rarely
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios2" value="20">
+                    Sometimes
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios3" value="30">
+                    Often
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios4" value="40">
+                    Very Often
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+
+        <form>
+            <fieldset class="form-group">
+                <p><b>8. I actively keep in touch with friends and family.</b></p>              
+                <div class="form-check">                  
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="8" id="optionsRadios1" value="10" checked>
+                    Rarely
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="8" id="optionsRadios2" value="20">
+                    Sometimes
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="8" id="optionsRadios3" value="30">
+                    Often
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="8" id="optionsRadios4" value="40">
+                    Very Often
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+
+        <form>
+            <fieldset class="form-group">
+                <p><b>9. When things are tough, I reach out for support.</b></p>              
+                <div class="form-check">                  
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="9" id="optionsRadios1" value="10" checked>
+                    Rarely
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="9" id="optionsRadios2" value="20">
+                    Sometimes
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="9" id="optionsRadios3" value="30">
+                    Often
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="9" id="optionsRadios4" value="40">
+                    Very Often
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+      <form>
+            <fieldset class="form-group">
+                <p><b>10. Do you experience repetitive and persistent thoughts that are upsetting and unwanted?</b></p>              
+                <div class="form-check">                  
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="10" id="optionsRadios1" value="10" checked>
+                    Rarely
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="10" id="optionsRadios2" value="20">
+                    Sometimes
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="10" id="optionsRadios3" value="30">
+                    Often
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="10" id="optionsRadios4" value="40">
+                    Very Often
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+   <button type="submit" class="btn btn-primary srceenTest" id="srceenTest">Submit</button>
+  </div>
+
+   <div id="piechart"></div>
+  <div class="card1">
+     <div class="card1-body">
+    
+   <span id="Score"></span>
+   <span id="deptype"></span>
+  </div>
+  </div>
+
+
+</div>
+<script>
+document.getElementById('srceenTest').addEventListener('click',function(){
+  var score = [];
+  for(i=1;i<=10;i++){
+    let t = document.getElementsByName(String(i));
+    t.forEach(radio=>{if(radio.checked) score.push(parseInt(radio.value))});
+  }
+  console.log(score);
+  const sumScore = (accumulator, currentValue) => accumulator + currentValue;
+  const min  = 100;
+  const max = 400;
+  const total =score.reduce(sumScore);
+  console.log(total);
+  const finalScore= ((total-min)/(max-min))*100;
+  console.log(parseInt(finalScore));
+  {% comment %} var quiz = document.getElementById("formfill");
+  quiz.style.display="none"; {% endcomment %}
+  var dep;
+  if(finalScore<=20)dep="Normal Condition";
+  else if(finalScore>20 && finalScore<=50)dep="Mild Depression";
+  else if(finalScore>50 && finalScore<=75)dep="Moderate Depression";
+  else if(finalScore>75 && finalScore<=100)dep="Severe Depression";
+  
+  document.getElementById('formfill').innerHTML="";
+ 
+  document.getElementById('Score').innerHTML ='The Percentage shows level of Depression : '+String(parseInt(finalScore))+'%';
+  document.getElementById('deptype').innerHTML = dep;
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+var k=finalScore;
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Depression Percent'],
+  ['Your Percentage', k],
+  ['Rest', 100-k],
+  
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'DEPRESSION LEVEL', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+  
+})
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</body>
+</html>
