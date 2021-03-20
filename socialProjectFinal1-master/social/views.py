@@ -99,7 +99,7 @@ def login(request):
         else:
             return render(request, 'social/login.html', {'error_message': "Invalid Credentials"})
     return render(request, 'social/login.html')
-@login_required
+@login_required(login_url= '/social/login/')
 def home(request):
     #all_user= User.objects.all()
     #dict = {'all_user':all_user}
@@ -111,7 +111,7 @@ def home(request):
         for dia in a.dialog_set.all():
             all_user.append(dia.owner)   
     return render(request,'social/home.html',{'all_user':all_user})
-    
+
 @login_required
 def trustable(request, id_user):# all user objects fine as this view only for student. Means all faculty
     all_user= User.objects.all()
