@@ -1,0 +1,265 @@
+<style>
+    .container h1 {
+    font-size: 3.3125rem;
+    line-height: 1.15em;
+}
+
+.container h4 {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+}
+.title, .title  {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+    color: #3C4858;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Roboto Slab","Times New Roman",serif;
+}
+.container a {
+    color: #9c27b0;
+}
+.page-header {
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-filter:after, .header-filter:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.header-filter::before {
+    background: rgba(0,0,0,.5);
+}
+
+.header-filter .container {
+    z-index: 2;
+    position: relative;
+}
+
+.page-header .title {
+    color: #fff;
+}
+
+.page-header h4{
+    color: #fff;
+}
+
+/* buttons */
+
+.container .btn{
+    position: relative;
+    padding: 12px 30px;
+    margin: .3125rem 1px;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.428571;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border: 0;
+    border-radius: .2rem;
+    outline: 0;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1);
+    will-change: box-shadow,transform;
+}
+
+.container .btn.btn-raised.btn-primary:focus,
+.container .btn.btn-raised.btn-primary:hover {
+    color: #fff;
+    background-color: #9124a3;
+    border-color: #701c7e;
+}
+
+.container .btn.btn-lg {
+    padding: 1.125rem 2.25rem;
+    font-size: .875rem;
+    line-height: 1.333333;
+    border-radius: .2rem;
+}
+
+.container .btn.btn-danger {
+    color: #fff;
+    background-color: #f44336;
+    border-color: #f44336;
+    box-shadow: 0 2px 2px 0 rgba(244,67,54,.14), 0 3px 1px -2px rgba(244,67,54,.2), 0 1px 5px 0 rgba(244,67,54,.12);
+}
+
+.container .btn.btn-danger:hover {
+    box-shadow: 0 14px 26px -12px rgba(244,67,54,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(244,67,54,.2);
+}
+
+.container .btn.btn-raised.btn-primary {
+    color: #fff;
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    box-shadow: 0 2px 2px 0 rgba(156,39,176,.14), 0 3px 1px -2px rgba(156,39,176,.2), 0 1px 5px 0 rgba(156,39,176,.12);
+}
+
+.container .btn.btn-primary:hover {
+    box-shadow: 0 14px 26px -12px rgba(156,39,176,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(156,39,176,.2);
+}
+.container .btn.btn-just-icon {
+    font-size: 24px;
+    height: 41px;
+    min-width: 41px;
+    width: 41px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: 41px;
+    background-color: transparent;
+    color: #999;
+}
+
+.container .btn.btn-just-icon .fa, .btn.btn-just-icon .material-icons {
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    transform: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    line-height: 41px;
+    font-size: 20px;
+}
+.navbar {
+    border: 0;
+    border-radius: 3px;
+    padding: .625rem 0;
+    margin-bottom: 20px;
+    color: #555;
+    background-color: #fff!important;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15) !important;
+    z-index: 1000 !important;
+    transition: all 150ms ease 0s;
+    
+}
+
+.navbar.navbar-transparent {
+    z-index: 1030;
+    background-color: transparent!important;
+    box-shadow: none !important;
+    padding-top: 25px;
+    color: #fff;
+}
+
+.navbar .navbar-brand {
+    position: relative;
+    color: inherit;
+    height: 50px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    padding: .625rem 0;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:not(.btn) .material-icons {
+    margin-top: -7px;
+    top: 6px;
+    position: relative;
+    margin-right: 3px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .material-icons {
+    font-size: 1.25rem;
+    max-width: 24px;
+    margin-top: -1.1em;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .fa, .navbar .navbar-nav .nav-item .nav-link .material-icons {
+    font-size: 1.25rem;
+    max-width: 24px;
+    margin-top: -1.1em;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    position: relative;
+    color: inherit;
+    padding: .9375rem;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 20px;
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg "  color-on-scroll="100"  id="sectionsNav">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="#">NIT Raipur Student Support</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto m-1">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                {% if user.is_authenticated %}                    
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="/social/home/">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/social/logout/">Logout</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/social/post/">Posts</a>
+                  </li>
+                  {% else %}
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/social/register/">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/social/login/">Login</a>
+                  </li>
+                  
+                  {% endif %}
+
+                {% if user.is_authenticated and  request.user.is_superuser %}
+                      <li class="nav-item"><a class="nav-link text-white" href="/social/create">Create User</a></li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="/admin/">Admin</a>
+                </li>
+                {% endif %}
+              </ul>
+        </div>
+    </div>
+</nav>
+<div class="page-header header-filter" data-parallax="true" style=" background-image: url('https://images.unsplash.com/photo-1531449862596-16e4c62e2b10?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7261ec0c2507c69c76ec73a01162637b&auto=format&fit=crop&w=750&q=80'); ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title">There's always hope left.</h1>
+                <h4>In this sparking world, there's huge chance that we may get lost. But remember the sparkle must be within you. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum deleniti blanditiis nemo, fugit magnam at dolorem dolorum ea in maxime. Incidunt sit, expedita perspiciatis eveniet beatae itaque maiores. Iste, labore.</h4> 
+                <br>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
+                    <i class="fa fa-play"></i> Watch video
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

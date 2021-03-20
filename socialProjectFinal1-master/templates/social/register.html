@@ -1,0 +1,306 @@
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- <style>
+	/*-----Background-----*/
+
+body{
+	 background-image:url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	 background-color: rgb(194, 193, 214);
+	 background-repeat:no-repeat;
+	 background-size:cover;
+	 width:100%;
+	 height:100vh;
+	 overflow:auto;
+	 
+}
+
+/*-----for border----*/
+.container{
+	font-family:Roboto,sans-serif;
+	  background-image:url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg) ;
+    
+     border-style: 1px solid grey;
+     margin: 0 auto;
+     text-align: center;
+     opacity: 0.8;
+     margin-top: 67px;
+   box-shadow: 2px 5px 5px 0px #eee;
+     max-width: 500px;
+     padding-top: 10px;
+     height: 435px;
+     margin-top: 100px;
+}
+/*--- for label of first and last name---*/
+.lastname{
+	 margin-left: 1px;
+     font-family: sans-serif;
+     font-size: 14px;
+     color: white;
+     margin-top: 10px;
+}
+.firstname{
+	 margin-left: 1px;
+     font-family: sans-serif;
+     font-size: 14px;
+     color: white;
+     margin-top: 5px;
+}
+#lname{
+	 margin-top:5px;
+}
+	  
+
+/*---for heading-----*/
+.heading{
+	 text-decoration:bold;
+	 text-align : center;
+	 font-size:30px;
+	 color:white;
+	 padding-top:10px;
+}
+/*-------for email----------*/
+  /*------label----*/
+#email{
+	  margin-top: 5px;
+}
+/*-----------for Password--------*/
+     /*-------label-----*/
+.mail{
+	 margin-left: 44px;
+     font-family: sans-serif;
+     color: white;
+     font-size: 14px;
+     margin-top: 13px;
+}
+.pass{
+	 color: white;
+     margin-top: 9px;
+     font-size: 14px;
+     font-family: sans-serif;
+     margin-left: 6px;
+     margin-top: 9px;
+}
+#password{
+ margin-top: 6px;
+}
+/*------------for phone Number--------*/
+      /*----------label--------*/
+.pno{
+	 font-size: 18px;
+     margin-left: -13px;
+     margin-top: 10px;
+     color: #ff9;
+	
+}	
+
+/*--------------for Gender---------------*/
+     /*--------------label---------*/
+.gender {
+	 color: white;
+     font-family: sans-serif;
+     font-size: 14px;
+     margin-left: 28px;
+     margin-top: 8px;
+}
+
+     /*---------- for Input type--------*/
+.col-xs-4.male{
+	 color: white;
+     font-size: 13px;
+     margin-top: 9px;
+     padding-bottom: 16px;
+}
+.col-xs-4.female {
+     color: white;
+     font-size: 13px;
+     margin-top: 9px;
+     padding-bottom: 16px;
+	 padding-right: 95px;
+}	
+/*------------For submit button---------*/
+.sbutton{
+	 color: white;
+     font-size: 20px;
+     border: 1px solid white;
+     background-color: #080808;
+     width: 32%;
+     margin-left: 41%;
+     margin-top: 16px;
+	 box-shadow: 0px 2px 2px 0px white;
+  	   
+   }
+.btn.btn-warning:hover {
+    box-shadow: 2px 1px 2px 3px #99ccff;
+	background:#5900a6;
+	color:#fff;
+	transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
+	
+}	 
+	  
+</style> -->
+
+
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<style>
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			font-family: "Poppins", sans-serif;
+		}
+
+		.container {
+			width: 100%;
+			height: 100%;
+			font-size: 10px;
+
+			background: rgb(255, 194, 254);
+			background: linear-gradient(10deg,
+					rgba(255, 194, 254, 1) 0%,
+					rgba(62, 106, 201, 1) 100%);
+		}
+
+		.card {
+			width: 100%;
+			max-width: 400px;
+			height: auto;
+			color: rgb(255, 255, 255);
+			box-sizing: content-box;
+			margin: 0 auto 0 auto;
+			border-radius: 4px;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			padding: 1rem 1.5rem 2rem 1.5rem;
+			-webkit-backdrop-filter: blur(50px);
+			backdrop-filter: blur(50px);
+			box-shadow: inset 0 -1em 1em rgba(255, 255, 255, 0.1),
+				0 0 0 1px rgba(255, 255, 255, 0.1), 0.3em 0.2em 3em rgba(0, 0, 0, 0.2);
+		}
+
+		p.title {
+			font-size: 1.25rem;
+			text-align: center;
+			letter-spacing: 0.2rem;
+		}
+
+		.card--header {
+			padding-bottom: 1rem;
+		}
+
+		.card--body {
+			width: 100%;
+			padding-bottom: 1rem;
+		}
+
+		label {
+			display: block;
+			font-family: sans-serif;
+			font-size: 0.75rem;
+			margin-bottom: 0.5rem;
+			letter-spacing: 0.2rem;
+			text-transform: uppercase;
+		}
+
+		input {
+			box-sizing: border-box;
+			display: block;
+			margin-bottom: 0.25rem;
+			color: #4a4a4a;
+			font-size: 1rem;
+			width: 100%;
+			height: 30px;
+			lign-height: 44px;
+			padding-left: 0.8rem;
+			background-color: rgba(255, 255, 255, 0);
+			border: 1px solid rgba(255, 255, 255, 1);
+			border-radius: 4px;
+			transition: background-color 0.3s;
+		}
+
+		input:hover,
+		input:focus {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+
+		.card--footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn_sign-up {
+			font-size: 1.25rem;
+			padding: 1rem 2rem;
+			/*   width: 100%; */
+			background-color: rgba(255, 255, 255, 0.8);
+			color: rgba(0, 0, 0, 0.5);
+			font-size: 1rem;
+			border: 1px solid transparent;
+			border-radius: 2rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: background-color 0.3s;
+		}
+
+		.btn_sign-up:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+			border: 1px solid rgba(255, 255, 255, 1);
+			color: rgb(255, 255, 255);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card--header">
+			<p class="title">Registration Page</p>
+		</div>
+		<div class="card">
+			<form id="login-form" class="form" action="/social/register/" method="POST">
+				{% csrf_token %}
+				
+				<div class="card--body">
+					<label for="username">Firstname</label>
+					<input type="text" name="first_name" id="fname">
+
+					<label for="username">Lastname</label>
+					<input type="text" name="last_name" id="lname">
+
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username">
+
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email">
+
+					<label for="password">Password:</label>
+					<input type="password" name="password1" id="password1">
+
+					<label for="password">Confirm Password:</label>
+					<input type="password" name="password2" id="password2">
+				</div>
+				
+				<div class="card--footer">
+					<button type="submit" name="register" class="btn_sign-up">Register</button>
+				</div>
+
+
+				<!-- <div class="col-sm-12">
+					<input class="btn btn-warning" type="submit" value="Submit" name="register">
+				</div> -->
+				<!-- <div class="card--footer">
+					<button type="submit" name="login" class="btn_sign-up">login</button>
+				</div><br>
+				<div id="register-link" class="card--footer">
+					<button type="submit" class="btn_sign-up"><a href="/social/register/">Register Here</a></button>
+				</div> -->
+		</div>
+	</div>
+</body>
+
+</html>
+

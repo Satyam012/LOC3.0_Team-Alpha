@@ -1,0 +1,19 @@
+<form action="/social/create/" method="POST" >
+	{% csrf_token %}
+<input type="text" name="first_name" placeholder="First Name"><br>
+<input type="text" name="last_name" placeholder="Last Name"><br>
+<input type="text" name="username" placeholder="username"><br>
+<input type="email" name="email" placeholder="email"><br>
+<input type="password" name="password1" placeholder="password1"><br>
+<input type="password" name="password2" placeholder="password2"><br>
+<label for = "faculty">Faculty:</label>
+<input type="radio" name="userType" id = "faculty" value="0"><BR>
+<label for = "faculty">Counsellor:</label>
+<input type="radio" name="userType" id = "counsellor" value="1"><BR>
+<input type="submit" value="submit" name="register"><br>
+</form>
+
+{% if error_message %}
+	<h1>{{ error_message }}</h1>
+{% endif %}
+	
