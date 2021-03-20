@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-color: rgb(194, 193, 214);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color:white;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 150px;
+  max-width: 600px;
+  height: 350px;
+  border-style: 1px solid grey;
+  background-image:url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg) ;
+  box-shadow: 2px 5px 5px 0px #eee;
+  opacity: 0.8;
+  font-family:Roboto,sans-serif;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 10px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+.heading{
+	 text-decoration:bold;
+	 text-align : center;
+	 font-size:30px;
+	 color:white;
+	 padding-top:10px;
+}
+.btn.btn-warning:hover {
+    box-shadow: 2px 1px 2px 3px #99ccff;
+	background:#5900a6;
+	color:#fff;
+	transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
+	
+}	
+ 
+</style>
+<div id="login">
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <header class="heading">Login</header><hr style="color:white">
+                    <form id="login-form" class="form" action="/social/login/" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="username" style="color:white">Username:</label><br>
+                            <input type="text" name="username" id="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" style="color:white">Password:</label><br>
+                            <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="remember-me" class="" style="color:white"><span>Remember Me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                            <input type="submit" name="login" class="btn btn-warning" value="Login">
+                        </div>
+                        <div id="register-link" class="text-right">
+                            <a href="/social/register/" style="color:rgb(204, 69, 45)">Register Here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
