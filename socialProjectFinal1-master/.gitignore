@@ -1,3 +1,2 @@
-
-.vscode/settings.json
-*.sqlite3
+# created by virtualenv automatically
+*

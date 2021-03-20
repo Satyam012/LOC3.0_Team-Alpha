@@ -111,6 +111,7 @@ def home(request):
         for dia in a.dialog_set.all():
             all_user.append(dia.owner)   
     return render(request,'social/home.html',{'all_user':all_user})
+    
 @login_required
 def trustable(request, id_user):# all user objects fine as this view only for student. Means all faculty
     all_user= User.objects.all()
