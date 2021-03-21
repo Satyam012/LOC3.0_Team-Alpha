@@ -11,7 +11,17 @@ HearMe is a mental wellness web application.  A report by World Health Organizat
 
 ## Screenshots
 
-
+<img src="screenshots/home.jpeg" width="500">
+<img src="screenshots/home2.jpeg" width="500">
+<img src="screenshots/home3.jpeg" width="500">
+<img src="screenshots/register.jpeg" width="500">
+<img src="screenshots/login.jpeg" width="500">
+<img src="screenshots/chat2.jpeg" width="500">
+<img src="screenshots/chat.jpeg" width="500">
+<img src="screenshots/dep.png" width="500">
+<img src="screenshots/result.png" width="500">
+<img src="screenshots/blog.jpeg" width="500">
+<img src="screenshots/post.jpeg" width="500">
 
 
 ## Technology Stack
